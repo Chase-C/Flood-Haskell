@@ -1,7 +1,6 @@
 module Types where
 
 import Control.Monad.RWS.Strict
-import Data.Word
 import Data.Array.IArray
 
 import Graphics.UI.SDL

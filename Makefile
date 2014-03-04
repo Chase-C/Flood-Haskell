@@ -1,12 +1,12 @@
-CC		= ghc -O2 -Wall
+CC		= ghc -O0 -Wall
+FLAGS	= -tmpdir /tmp
 SRCDIR	= src
-OBJDIR	= obj
-FILES	= Main.hs Game.hs Entity.hs Utils.hs
-SOURCES	= $(FILES:%.cpp=${SRCDIR}/%.cpp)
-OBJECTS	= $(FILES:%.cpp=${OBJDIR}/%.cpp)
-EXEC	= FishSim
+FILES	= Main.hs Types.hs Board.hs UI.hs Utils.hs
+SOURCES	= $(FILES:%.hs=${SRCDIR}/%.hs)
+EXEC	= Flood
 
 all : ${EXEC}
 
 ${EXEC} : ${SOURCES}
-	${CC} $^
+	${CC} ${FLAGS} -o $@ $^
+	- rm src/*.{hi,o}
