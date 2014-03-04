@@ -5,6 +5,7 @@ import Types
 import Board
 import Utils
 
+rects :: [(Int, Rect)]
 rects = map (\y -> (y, Rect ((boardWidth + 2) * tileSize) (y * tileSize * 2) tileSize tileSize)) [1..6]
 
 buttons :: [Button]

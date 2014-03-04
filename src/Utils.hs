@@ -39,13 +39,15 @@ drawRect surface rect colInt = do
     void $ fillRect surface (Just rect) color
 
 lookUpColor :: Surface -> Int -> IO Pixel
-lookUpColor s 0 = (mapRGB . surfaceGetPixelFormat) s 0x00 0x00 0x00
-lookUpColor s 1 = (mapRGB . surfaceGetPixelFormat) s 0xff 0x00 0x00
-lookUpColor s 2 = (mapRGB . surfaceGetPixelFormat) s 0x00 0xff 0x00
-lookUpColor s 3 = (mapRGB . surfaceGetPixelFormat) s 0x00 0x00 0xff
-lookUpColor s 4 = (mapRGB . surfaceGetPixelFormat) s 0xff 0xff 0x00
-lookUpColor s 5 = (mapRGB . surfaceGetPixelFormat) s 0x00 0xff 0xff
-lookUpColor s _ = (mapRGB . surfaceGetPixelFormat) s 0xff 0x00 0xff
+lookUpColor s 0 = mapCol s 0x00 0x00 0x00
+lookUpColor s 1 = mapCol s 0xff 0x00 0x00
+lookUpColor s 2 = mapCol s 0x00 0xff 0x00
+lookUpColor s 3 = mapCol s 0x00 0x00 0xff
+lookUpColor s 4 = mapCol s 0xff 0xff 0x00
+lookUpColor s 5 = mapCol s 0x00 0xff 0xff
+lookUpColor s _ = mapCol s 0xff 0x00 0xff
+
+mapCol = mapRGB . surfaceGetPixelFormat
 
 printMetrics :: Game ()
 printMetrics = do
@@ -56,5 +58,5 @@ printMetrics = do
     when (drawLoops == 0 || updateLoops == 0) $ return ()
     let avgDrawTime   = totalDrawTime / (fromIntegral drawLoops)
         avgUpdateTime = totalUpdateTime / (fromIntegral updateLoops)
-        str = "Draw Loops: " ++ show drawLoops ++ "\nAvg Draw Time: " ++ show avgDrawTime ++ "\nUpdate Loops: " ++ show updateLoops ++ "\nAvg Update Time: " ++ show avgUpdateTime
+        str = "\nDraw Loops: " ++ show drawLoops ++ "\nAvg Draw Time: " ++ show avgDrawTime ++ "\nUpdate Loops: " ++ show updateLoops ++ "\nAvg Update Time: " ++ show avgUpdateTime
     liftIO $ withFile "metrics.txt" AppendMode (\h -> hPutStrLn h str)

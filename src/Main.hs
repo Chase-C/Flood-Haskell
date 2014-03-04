@@ -4,10 +4,6 @@ import System.IO                (IOMode (..), withFile, hPutStrLn)
 import Control.Monad            (void, unless)
 import Control.Monad.RWS.Strict (RWST, ask, asks, evalRWST, get, gets, liftIO, modify, put)
 import Data.Time.Clock
-import Data.List
-import Data.Word
-import Data.Typeable
-import Data.Maybe
 
 import Graphics.UI.SDL as SDL
 
@@ -38,7 +34,6 @@ main = withInit [InitEverything] $ do
             stateUpdateTime  = diffTime
             }
     withFile "log.txt" WriteMode (\h -> return ())
-    withFile "metrics.txt" WriteMode (\h -> return())
     runGame gameEnv gameState
 
 runGame :: GameEnv -> GameState -> IO ()
@@ -72,7 +67,6 @@ nextEvent = do
                 stateUpdateTime  = totalUpdateTime + thisUpdateTime
             }
 
-            liftIO $ withFile "metrics.txt" AppendMode (\h -> hPutStrLn h ("Update Time: " ++ show thisUpdateTime))
         Quit -> do
             modify $ \s -> s { stateRunning = False }
             printMetrics
