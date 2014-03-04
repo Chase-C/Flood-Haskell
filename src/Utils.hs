@@ -1,8 +1,11 @@
 module Utils where
 
 import System.Random
+import System.IO                (IOMode (..), withFile, hPutStrLn)
+import Control.Monad.RWS.Strict (gets, liftIO)
 import Control.Monad
 import Graphics.UI.SDL
+import Types
 
 boardWidth :: Int
 boardWidth = 14
@@ -43,3 +46,15 @@ lookUpColor s 3 = (mapRGB . surfaceGetPixelFormat) s 0x00 0x00 0xff
 lookUpColor s 4 = (mapRGB . surfaceGetPixelFormat) s 0xff 0xff 0x00
 lookUpColor s 5 = (mapRGB . surfaceGetPixelFormat) s 0x00 0xff 0xff
 lookUpColor s _ = (mapRGB . surfaceGetPixelFormat) s 0xff 0x00 0xff
+
+printMetrics :: Game ()
+printMetrics = do
+    drawLoops       <- gets stateDrawLoops
+    totalDrawTime   <- gets stateDrawTime
+    updateLoops     <- gets stateUpdateLoops
+    totalUpdateTime <- gets stateUpdateTime
+    when (drawLoops == 0 || updateLoops == 0) $ return ()
+    let avgDrawTime   = totalDrawTime / (fromIntegral drawLoops)
+        avgUpdateTime = totalUpdateTime / (fromIntegral updateLoops)
+        str = "Draw Loops: " ++ show drawLoops ++ "\nAvg Draw Time: " ++ show avgDrawTime ++ "\nUpdate Loops: " ++ show updateLoops ++ "\nAvg Update Time: " ++ show avgUpdateTime
+    liftIO $ withFile "metrics.txt" AppendMode (\h -> hPutStrLn h str)

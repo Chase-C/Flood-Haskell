@@ -1,95 +1,164 @@
-Event: GotFocus [MouseFocus]
-Event: MouseButtonDown 383 256 ButtonLeft
-Event: MouseButtonUp 362 258 ButtonLeft
 Event: KeyDown (Keysym {symKey = SDLK_LSUPER, symModifiers = [], symUnicode = '\NUL'})
-Event: MouseButtonDown 333 262 ButtonLeft
-Event: MouseButtonUp 225 253 ButtonLeft
-Event: KeyUp (Keysym {symKey = SDLK_LSUPER, symModifiers = [], symUnicode = '\NUL'})
 Event: KeyDown (Keysym {symKey = SDLK_LSHIFT, symModifiers = [], symUnicode = '\NUL'})
-Event: KeyDown (Keysym {symKey = SDLK_LSUPER, symModifiers = [KeyModLeftShift], symUnicode = '\NUL'})
 Event: LostFocus [InputFocus]
 Event: KeyUp (Keysym {symKey = SDLK_LSHIFT, symModifiers = [], symUnicode = '\NUL'})
 Event: KeyUp (Keysym {symKey = SDLK_LSUPER, symModifiers = [], symUnicode = '\NUL'})
 Event: GotFocus [InputFocus]
+Event: KeyUp (Keysym {symKey = SDLK_LSUPER, symModifiers = [KeyModLeftShift], symUnicode = '\NUL'})
 Event: KeyUp (Keysym {symKey = SDLK_LSHIFT, symModifiers = [], symUnicode = '\NUL'})
-Event: KeyUp (Keysym {symKey = SDLK_LSUPER, symModifiers = [], symUnicode = '\NUL'})
-Event: MouseButtonDown 535 143 ButtonLeft
-Event: MouseButtonUp 534 144 ButtonLeft
-Changed color to: 2
-Event: MouseButtonDown 527 80 ButtonLeft
-Event: MouseButtonUp 527 80 ButtonLeft
-Changed color to: 1
-Event: MouseButtonDown 528 334 ButtonLeft
-Event: MouseButtonUp 528 333 ButtonLeft
-Changed color to: 5
-Event: MouseButtonDown 521 264 ButtonLeft
-Event: MouseButtonUp 521 264 ButtonLeft
-Changed color to: 4
-Event: LostFocus [MouseFocus]
-Event: LostFocus [InputFocus]
 Event: GotFocus [MouseFocus]
-Event: GotFocus [InputFocus]
-Event: MouseButtonDown 522 72 ButtonLeft
-Event: MouseButtonUp 522 75 ButtonLeft
-Changed color to: 1
-Event: MouseButtonDown 527 345 ButtonLeft
-Event: MouseButtonUp 527 345 ButtonLeft
-Changed color to: 5
-Event: MouseButtonDown 534 207 ButtonLeft
-Event: MouseButtonUp 534 207 ButtonLeft
-Changed color to: 3
-Event: MouseButtonDown 526 143 ButtonLeft
-Event: MouseButtonUp 526 144 ButtonLeft
-Changed color to: 2
-Event: MouseButtonDown 528 336 ButtonLeft
-Event: MouseButtonUp 528 336 ButtonLeft
-Changed color to: 5
-Event: MouseButtonDown 533 398 ButtonLeft
-Event: MouseButtonUp 533 397 ButtonLeft
+Event: MouseButtonDown 528 390 ButtonLeft
+Event: MouseButtonUp 528 389 ButtonLeft
 Changed color to: 6
-Event: LostFocus [MouseFocus]
-Event: LostFocus [InputFocus]
-Event: GotFocus [MouseFocus]
-Event: GotFocus [InputFocus]
-Event: MouseButtonDown 529 77 ButtonLeft
-Event: MouseButtonUp 529 77 ButtonLeft
-Changed color to: 1
-Event: MouseButtonDown 530 271 ButtonLeft
-Event: MouseButtonUp 530 271 ButtonLeft
+Event: MouseButtonDown 523 340 ButtonLeft
+Event: MouseButtonUp 524 340 ButtonLeft
+Changed color to: 5
+Event: MouseButtonDown 530 274 ButtonLeft
+Event: MouseButtonUp 532 274 ButtonLeft
 Changed color to: 4
-Event: MouseButtonDown 526 154 ButtonLeft
-Event: MouseButtonUp 526 154 ButtonLeft
-Changed color to: 2
-Event: MouseButtonDown 530 209 ButtonLeft
-Event: MouseButtonUp 530 210 ButtonLeft
+Event: MouseButtonDown 521 218 ButtonLeft
+Event: MouseButtonUp 522 214 ButtonLeft
 Changed color to: 3
-Event: MouseButtonDown 524 150 ButtonLeft
-Event: MouseButtonUp 525 152 ButtonLeft
+Event: MouseButtonDown 529 151 ButtonLeft
+Event: MouseButtonUp 529 151 ButtonLeft
 Changed color to: 2
-Event: MouseButtonDown 521 269 ButtonLeft
-Event: MouseButtonUp 521 269 ButtonLeft
+Event: MouseButtonDown 534 85 ButtonLeft
+Event: MouseButtonUp 535 85 ButtonLeft
+Changed color to: 1
+Event: MouseButtonDown 533 150 ButtonLeft
+Event: MouseButtonUp 533 150 ButtonLeft
+Changed color to: 2
+Event: MouseButtonDown 534 209 ButtonLeft
+Event: MouseButtonUp 534 210 ButtonLeft
+Changed color to: 3
+Event: MouseButtonDown 530 263 ButtonLeft
+Event: MouseButtonUp 530 263 ButtonLeft
 Changed color to: 4
-Event: MouseButtonDown 529 341 ButtonLeft
+Event: MouseButtonDown 529 339 ButtonLeft
+Event: MouseButtonUp 529 339 ButtonLeft
+Changed color to: 5
+Event: MouseButtonDown 528 400 ButtonLeft
+Event: MouseButtonUp 528 400 ButtonLeft
+Changed color to: 6
+Event: MouseButtonDown 531 341 ButtonLeft
+Event: MouseButtonUp 531 340 ButtonLeft
+Changed color to: 5
+Event: MouseButtonDown 529 277 ButtonLeft
+Event: MouseButtonUp 529 276 ButtonLeft
+Changed color to: 4
+Event: MouseButtonDown 532 216 ButtonLeft
+Event: MouseButtonUp 532 214 ButtonLeft
+Changed color to: 3
+Event: MouseButtonDown 525 146 ButtonLeft
+Event: MouseButtonUp 525 143 ButtonLeft
+Changed color to: 2
+Event: MouseButtonDown 522 91 ButtonLeft
+Event: MouseButtonUp 522 91 ButtonLeft
+Changed color to: 1
+Event: MouseButtonDown 529 142 ButtonLeft
+Event: MouseButtonUp 529 143 ButtonLeft
+Changed color to: 2
+Event: MouseButtonDown 534 197 ButtonLeft
+Event: MouseButtonUp 532 198 ButtonLeft
+Changed color to: 3
+Event: MouseButtonDown 533 259 ButtonLeft
+Event: MouseButtonUp 533 259 ButtonLeft
+Changed color to: 4
+Event: MouseButtonDown 529 332 ButtonLeft
+Event: MouseButtonUp 529 332 ButtonLeft
+Changed color to: 5
+Event: MouseButtonDown 530 391 ButtonLeft
+Event: MouseButtonUp 529 391 ButtonLeft
+Changed color to: 6
+Event: MouseButtonDown 534 345 ButtonLeft
+Event: MouseButtonUp 534 344 ButtonLeft
+Changed color to: 5
+Event: MouseButtonDown 531 266 ButtonLeft
+Event: MouseButtonUp 531 265 ButtonLeft
+Changed color to: 4
+Event: MouseButtonDown 525 218 ButtonLeft
+Event: MouseButtonUp 525 221 ButtonLeft
+Changed color to: 3
+Event: MouseButtonDown 526 150 ButtonLeft
+Event: MouseButtonUp 526 150 ButtonLeft
+Changed color to: 2
+Event: MouseButtonDown 526 82 ButtonLeft
+Event: MouseButtonUp 526 83 ButtonLeft
+Changed color to: 1
+Event: MouseButtonDown 529 134 ButtonLeft
+Event: MouseButtonUp 531 137 ButtonLeft
+Changed color to: 2
+Event: MouseButtonDown 526 211 ButtonLeft
+Event: MouseButtonUp 526 213 ButtonLeft
+Changed color to: 3
+Event: MouseButtonDown 523 265 ButtonLeft
+Event: MouseButtonUp 523 265 ButtonLeft
+Changed color to: 4
+Event: MouseButtonDown 527 333 ButtonLeft
+Event: MouseButtonUp 527 333 ButtonLeft
+Changed color to: 5
+Event: MouseButtonDown 528 391 ButtonLeft
+Event: MouseButtonUp 528 391 ButtonLeft
+Changed color to: 6
+Event: MouseButtonDown 531 347 ButtonLeft
+Event: MouseButtonUp 531 345 ButtonLeft
+Changed color to: 5
+Event: MouseButtonDown 530 293 ButtonLeft
+Event: MouseButtonUp 530 293 ButtonLeft
+Event: MouseButtonDown 532 282 ButtonLeft
+Event: MouseButtonUp 532 282 ButtonLeft
+Changed color to: 4
+Event: MouseButtonDown 532 198 ButtonLeft
+Event: MouseButtonUp 532 199 ButtonLeft
+Changed color to: 3
+Event: MouseButtonDown 539 156 ButtonLeft
+Event: MouseButtonUp 539 157 ButtonLeft
+Changed color to: 2
+Event: MouseButtonDown 531 88 ButtonLeft
+Event: MouseButtonUp 531 88 ButtonLeft
+Changed color to: 1
+Event: MouseButtonDown 533 150 ButtonLeft
+Event: MouseButtonUp 533 150 ButtonLeft
+Changed color to: 2
+Event: MouseButtonDown 528 208 ButtonLeft
+Event: MouseButtonUp 528 208 ButtonLeft
+Changed color to: 3
+Event: MouseButtonDown 534 277 ButtonLeft
+Event: MouseButtonUp 534 277 ButtonLeft
+Changed color to: 4
+Event: MouseButtonDown 529 340 ButtonLeft
+Event: MouseButtonUp 529 340 ButtonLeft
+Changed color to: 5
+Event: MouseButtonDown 529 395 ButtonLeft
+Event: MouseButtonUp 529 395 ButtonLeft
+Changed color to: 6
+Event: MouseButtonDown 529 342 ButtonLeft
 Event: MouseButtonUp 529 341 ButtonLeft
 Changed color to: 5
-Event: LostFocus [MouseFocus]
-Event: LostFocus [InputFocus]
-Event: GotFocus [MouseFocus]
-Event: GotFocus [InputFocus]
-Event: MouseButtonDown 534 80 ButtonLeft
-Event: MouseButtonUp 534 80 ButtonLeft
-Changed color to: 1
-Event: MouseButtonDown 518 148 ButtonLeft
-Event: MouseButtonUp 518 149 ButtonLeft
-Changed color to: 2
-Event: MouseButtonDown 519 305 ButtonLeft
-Event: MouseButtonUp 519 305 ButtonLeft
-Event: MouseButtonDown 524 218 ButtonLeft
-Event: MouseButtonUp 524 219 ButtonLeft
+Event: MouseButtonDown 532 265 ButtonLeft
+Event: MouseButtonUp 532 265 ButtonLeft
+Changed color to: 4
+Event: MouseButtonDown 529 212 ButtonLeft
+Event: MouseButtonUp 529 213 ButtonLeft
 Changed color to: 3
-Event: MouseButtonDown 522 385 ButtonLeft
-Event: MouseButtonUp 522 385 ButtonLeft
-Changed color to: 6
+Event: MouseButtonDown 530 149 ButtonLeft
+Event: MouseButtonUp 530 149 ButtonLeft
+Changed color to: 2
+Event: MouseButtonDown 539 73 ButtonLeft
+Event: MouseButtonUp 539 74 ButtonLeft
+Changed color to: 1
+Event: MouseButtonDown 527 153 ButtonLeft
+Event: MouseButtonUp 527 153 ButtonLeft
+Changed color to: 2
+Event: MouseButtonDown 527 204 ButtonLeft
+Event: MouseButtonUp 527 204 ButtonLeft
+Changed color to: 3
+Event: MouseButtonDown 528 271 ButtonLeft
+Event: MouseButtonUp 528 271 ButtonLeft
+Changed color to: 4
+Event: MouseButtonDown 524 336 ButtonLeft
+Event: MouseButtonUp 524 336 ButtonLeft
+Changed color to: 5
 Event: KeyDown (Keysym {symKey = SDLK_LSUPER, symModifiers = [], symUnicode = '\NUL'})
 Event: KeyDown (Keysym {symKey = SDLK_LSHIFT, symModifiers = [], symUnicode = '\NUL'})
 Event: LostFocus [InputFocus]
